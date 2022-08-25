@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>Pizzalaskuri</h1>
+    <form name="laskeminen">
+    <table class="table">
+        <tbody >
+            <tr >
+                <td>Valitse koko:</td>
+                <td>
+                    <input type="radio" id="normaali" name="rad" value="5" onchange="radio()">
+                    <label for="contactChoice1">Normaali 5 eur</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="lisa" value="" type="text" hidden></td>
+                <td>
+                    <input type="radio" id="perhe" name="rad" value="7" onchange="radio()">
+                    <label for="contactChoice2">Perhe 7 eur</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Valitse täytteet:</td>
+                <td>
+                    <input type="checkbox" id="checkbox1" onchange="lisata1()" 
+                    value="0,70" >
+                    <label for="contactChoice3">Kinkku 0,70 eur</label>
+                </td>
+            </tr>
+            
+            <tr>
+                <td> </td>
+                <td>
+                    <input type="checkbox" id="checkbox2" onchange="lisata2()"
+                    value="0.60" >
+                    <label for="contactChoice4">Ananas 0,60 eur</label>
+                </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td>
+                    <input type="checkbox" id="checkbox3" onchange="lisata3()"
+                     value="0.50">
+                    <label for="contactChoice5">Tonnikala 0,50 eur</label>
+                </td>
+            </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td>
+                    <input type="checkbox" id="checkbox4" onchange="lisata4()"
+                     value="0.50">
+                    <label for="contactChoice6">Herkkusieni 0,50 eur</label>
+                </td>
+            </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td>
+                    <input type="checkbox" id="checkbox5" onchange="lisata5()"
+                     value="0.50">
+                    <label for="contactChoice7">Oliivi 0,50 eur</label>
+                </td>
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="sum" value="" type="text" name="summa"></td>
+                </td>
+                <td>
+                    <input type="checkbox" id="checkbox6" onchange="lisata6()"
+                     value="0.70">
+                    <label for="contactChoice2">Lisäjuusto 0,70 eur</label>
+                </td>
+            </td>
+            </tr>
+            <tr>
+                <td>Pizzan hinta:</td>
+                <td><input type="text" name="phinta" id = "pizhinta" value="" readonly></td>
+            </tr>
+            <tr>
+                <td>Määrä:</td>
+                <td><input type="number" name="mhinta" value="1" min="0"><br></td>
+                <td id="vithetd"><input type="text" name="virhe" value="" id="virhe" ><br></td>
+
+            </tr>
+            <tr>
+                <td><input type="reset" id="buttontyh" value="Tyhjennä"></td>
+                <td><button type="button" id="button" onchange="tilaa()">Tilaa</button></td>
+                    
+            </tr>
+            <tr>
+                <td>Tilatut pizzat:</td>
+                <td><textarea id="textarea" name="tpizza"></textarea> </td>
+            </tr>
+            <tr>
+                <td>Yhteensä:</td>
+                <td><input type="text" name="yhinta" id="yhinta" value=0><br></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+    <script src=script.js></script>  
+</body>
+</html>

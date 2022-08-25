@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>Laatikon tilavuuden laskentalomake CSS-asetteluilla asemoituna </h1>
+        <form name="laskeminen">         
+
+            <p id="virhe" color="red"></p>
+
+            
+            <table>
+                <tbody>
+                <tr>
+                    <td> <p>Leveys (m):</p> </td>
+                    <td> <input type="text" name="leveys" value=""> <br></td>
+                    <td><p id="virhel"> </p></td>
+                </tr>
+                <tr>
+                    <td><p>Korkeus (m):</p> </td>
+                    <td> <input type="text" name="korkeus" value=""><br></td>
+                    <td><td><p id="virhek"> </p></td></td>
+                </tr>
+                <tr>
+                    <td><p>Syvyys (m):</p> </td>
+                    <td> <input type="text" name="syvyys" value=""><br></td>
+                    <td><td><p id="virhes"> </p></td></td>
+                </tr>
+                <tr>
+                    <td> <input type="reset" id="buttontyh" value="Tyhjennä"> </td>
+                    <td> <input type="button" id="buttonlas" value="Laske"> </td>
+                    
+                </tr>
+                <tr>
+                    <td><p>Tilavuus:</p> </td>
+                    <td> <input type="text" name="tilavuus" value=""><br></td>
+                </tr>
+                </tbody>
+            </table>
+        
+        
+        </form>
+
+
+
+    <script src=script.js></script> 
+</body>
+</html>
